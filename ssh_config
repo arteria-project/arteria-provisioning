@@ -1,6 +1,0 @@
-host *
-StrictHostKeyChecking no
-IdentityFile /home/vagrant/.ssh/key
-UserKnownHostsFile=/dev/null
-user vagrant
-LogLevel ERROR

@@ -1,6 +1,0 @@
-- name: restart st2
-  sudo: true
-  service:
-    name: "{{ item }}"
-    state: restarted
-  with_items: st2_services

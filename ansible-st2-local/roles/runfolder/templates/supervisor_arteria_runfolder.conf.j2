@@ -1,8 +1,0 @@
-[program:runfolder-ws]
-user = {{ arteria_user }}
-process_name = runfolder-%(process_num)s
-command = /opt/arteria/arteria-runfolder-env/bin/runfolder-ws
-              --port %(process_num)s --debug --configroot={{ arteria_runfolder_config_root }}
-# Set numprocs to 2 to run 2 processes, on ports [10800, 10801]
-numprocs = 1
-numprocs_start=10800
