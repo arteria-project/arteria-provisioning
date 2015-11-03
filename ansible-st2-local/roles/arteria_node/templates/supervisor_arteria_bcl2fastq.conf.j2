@@ -1,8 +1,0 @@
-[program:bcl2fastq-ws]
-user = {{ arteria_user }}
-process_name = bcl2fastq-ws-%(process_num)s
-command = /opt/arteria/arteria-bcl2fastq-env/bin/bcl2fastq-ws
-              --port %(process_num)s
-              --configroot={{ arteria_bcl2fastq_config_root }}
-numprocs = 1
-numprocs_start=10900

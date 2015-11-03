@@ -1,8 +1,0 @@
----
-
-- include: arteria_bcl2fastq.yml
-  tags: arteria_bcl2fastq
-- include: arteria_siswrap.yml
-  tags: arteria_siswrap
-- include: deploy_include_files.yml
-  tags: deploy_include_files

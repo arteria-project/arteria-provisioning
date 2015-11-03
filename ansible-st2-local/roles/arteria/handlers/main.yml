@@ -1,3 +1,0 @@
-- name: restart postfix
-  sudo: true
-  service: name=postfix state=restarted enabled=yes

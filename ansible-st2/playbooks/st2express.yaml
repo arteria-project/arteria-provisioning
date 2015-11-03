@@ -1,8 +1,0 @@
----
-- name: Install st2
-  hosts: all
-  roles:
-    - mongodb
-    - rabbitmq
-    - mistral
-    - st2
