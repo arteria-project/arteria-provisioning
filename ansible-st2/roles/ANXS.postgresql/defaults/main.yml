@@ -341,12 +341,12 @@ postgresql_log_destination: stderr
 
 # Enable capturing of stderr and csvlog into log files.
 # Required to be on for csvlogs.
-postgresql_logging_collector: off
+postgresql_logging_collector: on
 
 # These are only used if logging_collector is on:
 
 # Directory where log files are written, can be absolute or relative to PGDATA
-postgresql_log_directory: pg_log
+postgresql_log_directory: /var/log/postgresql
 # Log file name pattern, can include strftime() escapes
 postgresql_log_filename: postgresql-%Y-%m-%d_%H%M%S.log
 postgresql_log_file_mode: '0600' # begin with 0 to use octal notation
