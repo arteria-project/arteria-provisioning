@@ -2,3 +2,4 @@
 *.swp
 private_key*
 arteria_user.key*
+*.retry

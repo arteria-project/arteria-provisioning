@@ -2,8 +2,9 @@
 
 # 1. Remove ansible-st2
 # 2. Copy upstream ansible-st2
-# 3. Symlink arteria specific stuff with this script
-# 4. Commit changes
+# 3. Go into upstream ansible-st2 dir and run: ansible-galaxy install -r roles/mistral/requirements.yml
+# 4. Symlink arteria specific stuff with this script
+# 5. Commit changes
 
 SCRIPT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 

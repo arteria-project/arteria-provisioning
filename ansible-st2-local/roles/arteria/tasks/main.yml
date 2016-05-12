@@ -6,8 +6,17 @@
 - include: conf.yml
   tags: arteria_master_conf
 
-- name: Pause for 1 minute until stackstorm services are up and online
-  pause: minutes=1
+# This is needed because handlers are run last, after all tasks are finished, 
+# which is obviously too late for us
+- command: /bin/true
+  notify: 
+    - restart st2
+    - Restart nginx
+  tags: arteria_register_components
+
+- name: Force a manual (re)start of st2 services so we can register components
+  meta: flush_handlers
+  tags: arteria_register_components
 
 # FIXME: These steps has to be done manually for non-test systems at the moment, 
 # because we do not want passwords on live systems in clear text. Have to find

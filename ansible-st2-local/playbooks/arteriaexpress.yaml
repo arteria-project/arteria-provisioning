@@ -3,9 +3,8 @@
   remote_user: vagrant
   hosts: master
   vars:
-    st2_version: 0.13.2
-    st2_revision: 5
-    st2web_version: 0.13.2
+    st2_version: 1.4.0
+    st2_revision: 8
     st2_system_user_in_sudoers: no
     st2_system_user: arteria
     st2_auth_username: testu
